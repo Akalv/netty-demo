@@ -19,7 +19,7 @@ public class CalcServer {
                     .childHandler(new ChannelInitializer() {
                         @Override
                         protected void initChannel(Channel channel) throws Exception {
-                            channel.pipeline().addLast();
+                            channel.pipeline().addLast(new CalcServerHandler());
                         }
                     });
             ChannelFuture sync = bootstrap.bind(port).sync();
