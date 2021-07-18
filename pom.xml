@@ -28,19 +28,22 @@
             <artifactId>netty-all</artifactId>
             <version>4.1.31.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>4.0.0-rc-2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.caucho</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.64</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-jar-plugin</artifactId>-->
-<!--                <version>2.4</version>-->
-<!--&lt;!&ndash;                <configuration>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <source>1.8</source>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <target>1.8</target>&ndash;&gt;-->
-<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
-<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
